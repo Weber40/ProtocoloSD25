@@ -1,0 +1,4 @@
+C:\Users\tiago\sd2425\obj\Debug\net9.0\SD2425.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tiago\sd2425\obj\Debug\net9.0\SD2425.AssemblyInfoInputs.cache
+C:\Users\tiago\sd2425\obj\Debug\net9.0\SD2425.AssemblyInfo.cs
+C:\Users\tiago\sd2425\obj\Debug\net9.0\SD2425.csproj.CoreCompileInputs.cache
