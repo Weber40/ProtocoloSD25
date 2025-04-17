@@ -3,7 +3,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 
-namespace Wavy.Server
+namespace Wavy.Serv
 {
     public class Server
     {

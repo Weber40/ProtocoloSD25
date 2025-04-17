@@ -5,5 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>Aggregator</RootNamespace>
   </PropertyGroup>
-
+  <ItemGroup>
+    <PackageReference Include="System.Threading.Timer" Version="4.3.0" />
+  </ItemGroup>
 </Project>
