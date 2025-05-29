@@ -3,6 +3,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using RabbitMQ.Client;
 
 class WAVY
 {
@@ -65,5 +66,20 @@ class WAVY
             Console.WriteLine($"Error sending message: {ex.Message}");
             throw; // Re-throw to handle it in the calling method
         }
+    }
+}
+
+public class WavyPublisher
+{
+    public void Publish(string sensorType, string data)
+    {
+        // Simula publicação escrevendo num ficheiro
+        File.AppendAllText("pubsub_simulado.txt", $"{DateTime.Now},{sensorType},{data}\n");
+        Console.WriteLine($"[WAVY] (Simulado) Published {sensorType}: {data}");
+    }
+
+    public void Close()
+    {
+        // Nada a fechar na simulação
     }
 }

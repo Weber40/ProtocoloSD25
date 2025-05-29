@@ -2,24 +2,31 @@
 using System;
 using System.Threading.Tasks;
 
-
 namespace Aggregator
 {
-    class Program
+    public class Program
     {
+        public static void Main(string[] args)
+        {
+            MainAsync(args).GetAwaiter().GetResult();
+        }
 
-
-        static async Task Main(string[] args)
+        public static async Task MainAsync(string[] args)
         {
             //Modo servidor STD
             Console.WriteLine("Aggregator is running...");
-            var aggregator = new Aggregator("localhost", 13001, "localhost", 13000);
+            var aggregator = new Aggregator("localhost", 14001, "localhost", 14000);
             await aggregator.StartAsync();
+
+            var subscriber = new WavySubscriber();
+            subscriber.Subscribe("TEMPERATURE", aggregator);
+            subscriber.Subscribe("PRESSURE", aggregator);
+            // Mantém a aplicação a correr para receber mensagens
+            Console.ReadLine();
+            subscriber.Close();
 
             // Modo teste (opcional)
             //Aggregator.TestConnectionToMainServer();
-
-
         }
     }
 }

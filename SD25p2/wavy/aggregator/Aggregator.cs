@@ -6,6 +6,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using Grpc.Net.Client;
 using Aggregator.Preprocessing; // Namespace gerado pelo proto
+using RabbitMQ.Client;
+using RabbitMQ.Client.Events;
 
 namespace Aggregator
 {
@@ -16,7 +18,7 @@ namespace Aggregator
         private readonly int _wavyServerPort;
         private readonly string _mainServerAddress;
         private readonly int _mainServerPort;
-        private readonly List<string> _pendingData = new List<string>();
+        public List<string> _pendingData = new List<string>();
         private readonly Timer _timer;
 
         public static async Task TestConnectionToMainServerAsync(string[] args)
@@ -199,6 +201,59 @@ namespace Aggregator
             var reply = await client.PreprocessAsync(request);
 
             return reply.NormalizedData;
+        }
+
+        public void AddPendingData(string data)
+        {
+            lock (_pendingData)
+            {
+                _pendingData.Add(data);
+            }
+        }
+    }
+
+    public class WavySubscriber
+    {
+        private readonly IConnection _connection;
+        private readonly object _channel;
+
+        public WavySubscriber(string hostName = "localhost")
+        {
+            var factory = new ConnectionFactory() { HostName = hostName };
+            _connection = factory.CreateConnection();
+            var channel = _connection.CreateModel();
+            _channel = channel;
+            channel.ExchangeDeclare(exchange: "wavy_data", type: ExchangeType.Topic);
+        }
+
+        public void Subscribe(string sensorType, Aggregator aggregator)
+        {
+            var queueName = ((IModel)_channel).QueueDeclare().QueueName;
+            var routingKey = $"wavy.{sensorType.ToLower()}";
+            ((IModel)_channel).QueueBind(queue: queueName, exchange: "wavy_data", routingKey: routingKey);
+
+            var consumer = new EventingBasicConsumer((IModel)_channel);
+            consumer.Received += async (model, ea) =>
+            {
+                var body = ea.Body.ToArray();
+                var message = Encoding.UTF8.GetString(body);
+                Console.WriteLine($"[Aggregator] Received {routingKey}: {message}");
+
+                // Pré-processamento RPC
+                string processed = await aggregator.PreprocessDataAsync(message);
+
+                // Adiciona à lista de dados pendentes para envio ao servidor principal
+                aggregator.AddPendingData(processed);
+            };
+            ((IModel)_channel).BasicConsume(queue: queueName, autoAck: true, consumer: consumer);
+
+            Console.WriteLine($"[Aggregator] Subscribed to {routingKey}");
+        }
+
+        public void Close()
+        {
+            ((IModel)_channel).Close();
+            _connection.Close();
         }
     }
 }

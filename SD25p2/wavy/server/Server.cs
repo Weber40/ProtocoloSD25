@@ -3,6 +3,8 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.IO;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace Wavy.Serv
 {
@@ -179,13 +181,13 @@ namespace Wavy.Serv
         {
             Console.WriteLine("Data received and acknowledged: {0}", data);
 
-            // Save the data to a CSV file
+            // Save the data to the CSV file
             string filePath = "received_data.csv";
             try
             {
                 using (var writer = new StreamWriter(filePath, append: true))
                 {
-                    writer.WriteLine($"{DateTime.Now},{data}");
+                    writer.WriteLine($"{DateTime.Now},DATA:{data}");
                 }
                 Console.WriteLine("Data saved to CSV.");
             }
@@ -218,6 +220,112 @@ namespace Wavy.Serv
             {
                 Console.WriteLine($"[SUCCESS] Data received and saved.");
             }
+        }
+
+        public static void DisplayMenu()
+        {
+            // ...
+        }
+
+        private static void ListarDados()
+        {
+            string filePath = "received_data.csv";
+            if (!File.Exists(filePath))
+            {
+                Console.WriteLine("Nenhum dado registado.");
+                return;
+            }
+            Console.WriteLine("\n--- Dados Recebidos ---");
+            foreach (var line in File.ReadAllLines(filePath))
+            {
+                Console.WriteLine(line);
+            }
+        }
+
+        private static void ListarAnalises()
+        {
+            string filePath = "analysis_results.csv";
+            if (!File.Exists(filePath))
+            {
+                Console.WriteLine("Nenhuma análise registada.");
+                return;
+            }
+            Console.WriteLine("\n--- Resultados das Análises ---");
+            foreach (var line in File.ReadAllLines(filePath))
+            {
+                Console.WriteLine(line);
+            }
+        }
+
+        private static void NovaAnalise()
+        {
+            Console.WriteLine("\nTipo de análise disponível: Média de temperatura");
+            Console.Write("Introduza o intervalo inicial (yyyy-MM-dd HH:mm:ss): ");
+            if (!DateTime.TryParse(Console.ReadLine(), out DateTime inicio))
+            {
+                Console.WriteLine("Data inválida.");
+                return;
+            }
+            Console.Write("Introduza o intervalo final (yyyy-MM-dd HH:mm:ss): ");
+            if (!DateTime.TryParse(Console.ReadLine(), out DateTime fim))
+            {
+                Console.WriteLine("Data inválida.");
+                return;
+            }
+
+            string filePath = "received_data.csv";
+            if (!File.Exists(filePath))
+            {
+                Console.WriteLine("Nenhum dado registado.");
+                return;
+            }
+
+            var temperaturas = new List<double>();
+            foreach (var line in File.ReadAllLines(filePath))
+            {
+                var parts = line.Split(',');
+                if (parts.Length < 3) continue;
+                if (!DateTime.TryParse(parts[0], out DateTime dataHora)) continue;
+                if (dataHora < inicio || dataHora > fim) continue;
+                if (parts[1].Contains("DATA:TEMPERATURE"))
+                {
+                    var tempStr = parts[1].Split(':');
+                    if (tempStr.Length == 3 && double.TryParse(tempStr[2], out double temp))
+                    {
+                        temperaturas.Add(temp);
+                    }
+                    else if (parts[2].StartsWith("DATA:TEMPERATURE"))
+                    {
+                        var tempVal = parts[2].Split(':');
+                        if (tempVal.Length == 3 && double.TryParse(tempVal[2], out double temp2))
+                            temperaturas.Add(temp2);
+                    }
+                }
+                else if (parts[1].StartsWith("DATA:TEMPERATURE"))
+                {
+                    var tempVal = parts[1].Split(':');
+                    if (tempVal.Length == 3 && double.TryParse(tempVal[2], out double temp2))
+                        temperaturas.Add(temp2);
+                }
+            }
+
+            if (temperaturas.Count == 0)
+            {
+                Console.WriteLine("Nenhuma leitura de temperatura encontrada no intervalo.");
+                return;
+            }
+
+            double media = temperaturas.Average();
+            string resultado = $"{DateTime.Now},MEDIA_TEMPERATURA,{inicio} a {fim},{media:F2}";
+            Console.WriteLine("Resultado: " + resultado);
+
+            // Guarda o resultado da análise
+            string analysisFile = "analysis_results.csv";
+            using (var writer = new StreamWriter(analysisFile, append: true))
+            {
+                writer.WriteLine(resultado);
+            }
+            Console.WriteLine("Resultado guardado em analysis_results.csv");
         }
     }
 }

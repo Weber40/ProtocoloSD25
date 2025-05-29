@@ -8,23 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\David\\.nuget\\packages\\": {},
+    "C:\\Users\\tiago\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\David\\Downloads\\SD25p2\\SD25p2\\wavy\\server\\server.csproj",
+      "projectUniqueName": "C:\\Users\\tiago\\sd2425parte2\\ProtocoloSD25-1\\SD25p2\\wavy\\server\\server.csproj",
       "projectName": "server",
-      "projectPath": "C:\\Users\\David\\Downloads\\SD25p2\\SD25p2\\wavy\\server\\server.csproj",
-      "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\David\\Downloads\\SD25p2\\SD25p2\\wavy\\server\\obj\\",
+      "projectPath": "C:\\Users\\tiago\\sd2425parte2\\ProtocoloSD25-1\\SD25p2\\wavy\\server\\server.csproj",
+      "packagesPath": "C:\\Users\\tiago\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tiago\\sd2425parte2\\ProtocoloSD25-1\\SD25p2\\wavy\\server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -45,13 +45,7 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.200"
+      }
     },
     "frameworks": {
       "net6.0": {
@@ -72,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.428\\RuntimeIdentifierGraph.json"
       }
     }
   }
