@@ -1,8 +1,8 @@
 using System.Threading.Tasks;
 using Grpc.Core;
-using Aggregator.Preprocessing;
+using Preprocessing;
 
-public class PreprocessingServiceImpl : Aggregator.Preprocessing.PreprocessingService.PreprocessingServiceBase
+public class PreprocessingServiceImpl : Preprocessing.PreprocessingService.PreprocessingServiceBase
 {
     public override Task<PreprocessReply> Preprocess(PreprocessRequest request, ServerCallContext context)
     {

@@ -1,0 +1,2 @@
+obj\Debug\net9.0\Protos/Analysis.cs \
+obj\Debug\net9.0\Protos/AnalysisGrpc.cs: Protos/analysis.proto

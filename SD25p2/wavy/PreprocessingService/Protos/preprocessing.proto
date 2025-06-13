@@ -1,15 +1,15 @@
 syntax = "proto3";
 
-option csharp_namespace = "Aggregator.Preprocessing";
+option csharp_namespace = "Preprocessing";
 
 service PreprocessingService {
   rpc Preprocess (PreprocessRequest) returns (PreprocessReply);
 }
 
 message PreprocessRequest {
-  string raw_data = 1;
+  string rawData = 1;
 }
 
 message PreprocessReply {
-  string normalized_data = 1;
+  string normalizedData = 1;
 }

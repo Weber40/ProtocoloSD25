@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BSmERiYX1Gs=",
+  "dgSpecHash": "l4oOznPnk8Y=",
   "success": true,
-  "projectFilePath": "C:\\Users\\David\\Downloads\\SD25p2\\SD25p2\\wavy\\PreprocessingService\\PreprocessingService.csproj",
+  "projectFilePath": "C:\\Users\\David\\OneDrive - Universidade de Tras-os-Montes e Alto Douro\\Desktop\\Universidade\\Sistemas Distribuídos\\SD Protocolo 2-25\\SD25p2\\wavy\\PreprocessingService\\PreprocessingService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\David\\.nuget\\packages\\google.protobuf\\3.25.1\\google.protobuf.3.25.1.nupkg.sha512",
     "C:\\Users\\David\\.nuget\\packages\\grpc.aspnetcore\\2.57.0\\grpc.aspnetcore.2.57.0.nupkg.sha512",

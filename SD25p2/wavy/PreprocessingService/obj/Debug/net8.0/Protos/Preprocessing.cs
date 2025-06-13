@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Aggregator.Preprocessing {
+namespace Preprocessing {
 
   /// <summary>Holder for reflection information generated from Protos/preprocessing.proto</summary>
   public static partial class PreprocessingReflection {
@@ -24,16 +24,16 @@ namespace Aggregator.Preprocessing {
     static PreprocessingReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChpQcm90b3MvcHJlcHJvY2Vzc2luZy5wcm90byIlChFQcmVwcm9jZXNzUmVx",
-            "dWVzdBIQCghyYXdfZGF0YRgBIAEoCSIqCg9QcmVwcm9jZXNzUmVwbHkSFwoP",
-            "bm9ybWFsaXplZF9kYXRhGAEgASgJMkoKFFByZXByb2Nlc3NpbmdTZXJ2aWNl",
-            "EjIKClByZXByb2Nlc3MSEi5QcmVwcm9jZXNzUmVxdWVzdBoQLlByZXByb2Nl",
-            "c3NSZXBseUIbqgIYQWdncmVnYXRvci5QcmVwcm9jZXNzaW5nYgZwcm90bzM="));
+            "ChpQcm90b3MvcHJlcHJvY2Vzc2luZy5wcm90byIkChFQcmVwcm9jZXNzUmVx",
+            "dWVzdBIPCgdyYXdEYXRhGAEgASgJIikKD1ByZXByb2Nlc3NSZXBseRIWCg5u",
+            "b3JtYWxpemVkRGF0YRgBIAEoCTJKChRQcmVwcm9jZXNzaW5nU2VydmljZRIy",
+            "CgpQcmVwcm9jZXNzEhIuUHJlcHJvY2Vzc1JlcXVlc3QaEC5QcmVwcm9jZXNz",
+            "UmVwbHlCEKoCDVByZXByb2Nlc3NpbmdiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Aggregator.Preprocessing.PreprocessRequest), global::Aggregator.Preprocessing.PreprocessRequest.Parser, new[]{ "RawData" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Aggregator.Preprocessing.PreprocessReply), global::Aggregator.Preprocessing.PreprocessReply.Parser, new[]{ "NormalizedData" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Preprocessing.PreprocessRequest), global::Preprocessing.PreprocessRequest.Parser, new[]{ "RawData" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Preprocessing.PreprocessReply), global::Preprocessing.PreprocessReply.Parser, new[]{ "NormalizedData" }, null, null, null, null)
           }));
     }
     #endregion
@@ -54,7 +54,7 @@ namespace Aggregator.Preprocessing {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Aggregator.Preprocessing.PreprocessingReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Preprocessing.PreprocessingReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -84,7 +84,7 @@ namespace Aggregator.Preprocessing {
       return new PreprocessRequest(this);
     }
 
-    /// <summary>Field number for the "raw_data" field.</summary>
+    /// <summary>Field number for the "rawData" field.</summary>
     public const int RawDataFieldNumber = 1;
     private string rawData_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -243,7 +243,7 @@ namespace Aggregator.Preprocessing {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Aggregator.Preprocessing.PreprocessingReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Preprocessing.PreprocessingReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -273,7 +273,7 @@ namespace Aggregator.Preprocessing {
       return new PreprocessReply(this);
     }
 
-    /// <summary>Field number for the "normalized_data" field.</summary>
+    /// <summary>Field number for the "normalizedData" field.</summary>
     public const int NormalizedDataFieldNumber = 1;
     private string normalizedData_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

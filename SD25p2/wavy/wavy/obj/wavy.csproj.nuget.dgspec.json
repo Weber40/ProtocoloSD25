@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\David\\Downloads\\SD25p2\\SD25p2\\wavy\\wavy\\wavy.csproj": {}
+    "C:\\Users\\David\\OneDrive - Universidade de Tras-os-Montes e Alto Douro\\Desktop\\Universidade\\Sistemas Distribuídos\\SD Protocolo 2-25\\SD25p2\\wavy\\wavy\\wavy.csproj": {}
   },
   "projects": {
-    "C:\\Users\\David\\Downloads\\SD25p2\\SD25p2\\wavy\\wavy\\wavy.csproj": {
+    "C:\\Users\\David\\OneDrive - Universidade de Tras-os-Montes e Alto Douro\\Desktop\\Universidade\\Sistemas Distribuídos\\SD Protocolo 2-25\\SD25p2\\wavy\\wavy\\wavy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\David\\Downloads\\SD25p2\\SD25p2\\wavy\\wavy\\wavy.csproj",
+        "projectUniqueName": "C:\\Users\\David\\OneDrive - Universidade de Tras-os-Montes e Alto Douro\\Desktop\\Universidade\\Sistemas Distribuídos\\SD Protocolo 2-25\\SD25p2\\wavy\\wavy\\wavy.csproj",
         "projectName": "wavy",
-        "projectPath": "C:\\Users\\David\\Downloads\\SD25p2\\SD25p2\\wavy\\wavy\\wavy.csproj",
+        "projectPath": "C:\\Users\\David\\OneDrive - Universidade de Tras-os-Montes e Alto Douro\\Desktop\\Universidade\\Sistemas Distribuídos\\SD Protocolo 2-25\\SD25p2\\wavy\\wavy\\wavy.csproj",
         "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\David\\Downloads\\SD25p2\\SD25p2\\wavy\\wavy\\obj\\",
+        "outputPath": "C:\\Users\\David\\OneDrive - Universidade de Tras-os-Montes e Alto Douro\\Desktop\\Universidade\\Sistemas Distribuídos\\SD Protocolo 2-25\\SD25p2\\wavy\\wavy\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[7.1.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

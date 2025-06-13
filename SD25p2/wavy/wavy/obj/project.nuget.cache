@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "IoKG9C9cwts=",
+  "dgSpecHash": "twWT0Zxn8vM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\David\\Downloads\\SD25p2\\SD25p2\\wavy\\wavy\\wavy.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\David\\OneDrive - Universidade de Tras-os-Montes e Alto Douro\\Desktop\\Universidade\\Sistemas Distribuídos\\SD Protocolo 2-25\\SD25p2\\wavy\\wavy\\wavy.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\David\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\8.0.0\\microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512",
+    "C:\\Users\\David\\.nuget\\packages\\rabbitmq.client\\7.1.2\\rabbitmq.client.7.1.2.nupkg.sha512",
+    "C:\\Users\\David\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.1\\system.diagnostics.diagnosticsource.8.0.1.nupkg.sha512",
+    "C:\\Users\\David\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
+    "C:\\Users\\David\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\David\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\David\\.nuget\\packages\\system.threading.channels\\8.0.0\\system.threading.channels.8.0.0.nupkg.sha512",
+    "C:\\Users\\David\\.nuget\\packages\\system.threading.ratelimiting\\8.0.0\\system.threading.ratelimiting.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

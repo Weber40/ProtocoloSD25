@@ -1,4 +1,5 @@
-using System;
+// WAVY Publisher
+using RabbitMQ.Client;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
@@ -6,6 +7,18 @@ using System.IO;
 
 class WAVY
 {
+    private static async Task<string> SendMessageAndWaitAckAsync(NetworkStream stream, string message)
+    {
+        byte[] msg = Encoding.ASCII.GetBytes(message + "\n");
+        await stream.WriteAsync(msg, 0, msg.Length);
+
+        var buffer = new byte[1024];
+        int bytesRead = await stream.ReadAsync(buffer, 0, buffer.Length);
+        string response = Encoding.ASCII.GetString(buffer, 0, bytesRead).Trim();
+        Console.WriteLine($"Sent: {message} | Received: {response}");
+        return response;
+    }
+
     public static async Task Main(string[] args)
     {
         int port = 13001;
@@ -21,26 +34,24 @@ class WAVY
 
                 using (NetworkStream stream = client.GetStream())
                 {
-                    // Send ID to SERVER
-                    await SendMessageAsync(stream, "ID:WAVY_2");
+                    // Send ID to SERVER and wait for ACK
+                    await SendMessageAndWaitAckAsync(stream, "ID:WAVY_2");
 
-                    // Register data type (e.g., "PRESSURE")
-                    await SendMessageAsync(stream, "DATA_REG:PRESSURE");
+                    // Register data type (e.g., "PRESSURE") and wait for ACK
+                    await SendMessageAndWaitAckAsync(stream, "DATA_REG:PRESSURE");
 
-                    // Simulate sending data
+                    // Simulate sending data and wait for ACK each time
                     for (int i = 0; i < 5; i++)
                     {
                         string data = $"Data_{i}";
-                        await SendMessageAsync(stream, $"DATA:{data}");
+                        await SendMessageAndWaitAckAsync(stream, $"DATA:{data}");
                         await Task.Delay(200); // Simulate time delay
                     }
 
-                    // End session
-                    await SendMessageAsync(stream, "END");
+                    // End session and wait for ACK
+                    await SendMessageAndWaitAckAsync(stream, "END");
                 }
             }
-
-            Console.WriteLine("Disconnected from the server.");
         }
         catch (SocketException ex)
         {
@@ -50,20 +61,19 @@ class WAVY
         {
             Console.WriteLine($"Unexpected error: {ex.Message}");
         }
-    }
 
-    private static async Task SendMessageAsync(NetworkStream stream, string message)
-    {
-        try
-        {
-            byte[] msg = Encoding.ASCII.GetBytes(message + "\n");
-            await stream.WriteAsync(msg, 0, msg.Length);
-            Console.WriteLine($"Sent: {message}");
-        }
-        catch (IOException ex)
-        {
-            Console.WriteLine($"Error sending message: {ex.Message}");
-            throw; // Re-throw to handle it in the calling method
-        }
+        // RabbitMQ Publisher
+        var factory = new ConnectionFactory() { HostName = "localhost" };
+        using var connection = factory.CreateConnection();
+        using var channel = connection.CreateModel();
+
+        channel.ExchangeDeclare(exchange: "wavy_data", type: ExchangeType.Topic);
+
+        string routingKey = "sensor.pressure"; // ou outro tipo
+        string message = "DATA:123.45";
+        var body = Encoding.UTF8.GetBytes(message);
+
+        channel.BasicPublish(exchange: "wavy_data", routingKey: routingKey, body: body);
+        Console.WriteLine($"[WAVY] Sent '{routingKey}':'{message}'");
     }
 }

@@ -7,8 +7,7 @@
 
 using grpc = global::Grpc.Core;
 
-namespace Aggregator.Preprocessing
-{
+namespace Aggregator.Preprocessing {
   public static partial class PreprocessingService
   {
     static readonly string __ServiceName = "PreprocessingService";
@@ -16,7 +15,7 @@ namespace Aggregator.Preprocessing
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
     {
-#if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
       if (message is global::Google.Protobuf.IBufferMessage)
       {
         context.SetPayloadLength(message.CalculateSize());
@@ -24,7 +23,7 @@ namespace Aggregator.Preprocessing
         context.Complete();
         return;
       }
-#endif
+      #endif
       context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
     }
 
@@ -37,12 +36,12 @@ namespace Aggregator.Preprocessing
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
     {
-#if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
       if (__Helper_MessageCache<T>.IsBufferMessage)
       {
         return parser.ParseFrom(context.PayloadAsReadOnlySequence());
       }
-#endif
+      #endif
       return parser.ParseFrom(context.PayloadAsNewBuffer());
     }
 

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("aggregator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5515de9cd2a16dbcf2837148353287be99160802")]
 [assembly: System.Reflection.AssemblyProductAttribute("aggregator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("aggregator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

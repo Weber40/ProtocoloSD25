@@ -26,3 +26,23 @@ C:\Users\David\Downloads\SD25p2\SD25p2\wavy\PreprocessingService\obj\Debug\net8.
 C:\Users\David\Downloads\SD25p2\SD25p2\wavy\PreprocessingService\obj\Debug\net8.0\PreprocessingService.pdb
 C:\Users\David\Downloads\SD25p2\SD25p2\wavy\PreprocessingService\obj\Debug\net8.0\PreprocessingService.genruntimeconfig.cache
 C:\Users\David\Downloads\SD25p2\SD25p2\wavy\PreprocessingService\obj\Debug\net8.0\ref\PreprocessingService.dll
+C:\Users\David\Downloads\SD25p2\SD25p2\wavy\PreprocessingService\obj\Debug\net8.0\PreprocessingService.sourcelink.json
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\PreprocessingService\bin\Debug\net8.0\PreprocessingService.exe
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\PreprocessingService\bin\Debug\net8.0\PreprocessingService.dll
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\PreprocessingService\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\PreprocessingService\bin\Debug\net8.0\Grpc.AspNetCore.Server.dll
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\PreprocessingService\bin\Debug\net8.0\Grpc.Core.Api.dll
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\PreprocessingService\bin\Debug\net8.0\Grpc.Net.Common.dll
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\PreprocessingService\bin\Debug\net8.0\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\PreprocessingService\bin\Debug\net8.0\Grpc.Net.Client.dll
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\PreprocessingService\bin\Debug\net8.0\Grpc.Net.ClientFactory.dll
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\PreprocessingService\obj\Debug\net8.0\PreprocessingService.csproj.AssemblyReference.cache
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\PreprocessingService\obj\Debug\net8.0\PreprocessingService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\PreprocessingService\obj\Debug\net8.0\PreprocessingService.AssemblyInfoInputs.cache
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\PreprocessingService\obj\Debug\net8.0\PreprocessingService.AssemblyInfo.cs
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\PreprocessingService\obj\Debug\net8.0\PreprocessingService.csproj.CoreCompileInputs.cache
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\PreprocessingService\obj\Debug\net8.0\PreprocessingService.sourcelink.json
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\PreprocessingService\obj\Debug\net8.0\Preproce.86D3C353.Up2Date
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\PreprocessingService\obj\Debug\net8.0\PreprocessingService.dll
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\PreprocessingService\obj\Debug\net8.0\refint\PreprocessingService.dll
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\PreprocessingService\obj\Debug\net8.0\PreprocessingService.pdb

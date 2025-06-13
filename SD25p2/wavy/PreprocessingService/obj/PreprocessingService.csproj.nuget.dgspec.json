@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\David\\Downloads\\SD25p2\\SD25p2\\wavy\\PreprocessingService\\PreprocessingService.csproj": {}
+    "C:\\Users\\David\\OneDrive - Universidade de Tras-os-Montes e Alto Douro\\Desktop\\Universidade\\Sistemas Distribuídos\\SD Protocolo 2-25\\SD25p2\\wavy\\PreprocessingService\\PreprocessingService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\David\\Downloads\\SD25p2\\SD25p2\\wavy\\PreprocessingService\\PreprocessingService.csproj": {
+    "C:\\Users\\David\\OneDrive - Universidade de Tras-os-Montes e Alto Douro\\Desktop\\Universidade\\Sistemas Distribuídos\\SD Protocolo 2-25\\SD25p2\\wavy\\PreprocessingService\\PreprocessingService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\David\\Downloads\\SD25p2\\SD25p2\\wavy\\PreprocessingService\\PreprocessingService.csproj",
+        "projectUniqueName": "C:\\Users\\David\\OneDrive - Universidade de Tras-os-Montes e Alto Douro\\Desktop\\Universidade\\Sistemas Distribuídos\\SD Protocolo 2-25\\SD25p2\\wavy\\PreprocessingService\\PreprocessingService.csproj",
         "projectName": "PreprocessingService",
-        "projectPath": "C:\\Users\\David\\Downloads\\SD25p2\\SD25p2\\wavy\\PreprocessingService\\PreprocessingService.csproj",
+        "projectPath": "C:\\Users\\David\\OneDrive - Universidade de Tras-os-Montes e Alto Douro\\Desktop\\Universidade\\Sistemas Distribuídos\\SD Protocolo 2-25\\SD25p2\\wavy\\PreprocessingService\\PreprocessingService.csproj",
         "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\David\\Downloads\\SD25p2\\SD25p2\\wavy\\PreprocessingService\\obj\\",
+        "outputPath": "C:\\Users\\David\\OneDrive - Universidade de Tras-os-Montes e Alto Douro\\Desktop\\Universidade\\Sistemas Distribuídos\\SD Protocolo 2-25\\SD25p2\\wavy\\PreprocessingService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

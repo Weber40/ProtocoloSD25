@@ -6,6 +6,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using Grpc.Net.Client;
 using Aggregator.Preprocessing; // Namespace gerado pelo proto
+using RabbitMQ.Client;
+using RabbitMQ.Client.Events;
 
 namespace Aggregator
 {
@@ -150,8 +152,8 @@ namespace Aggregator
                     {
                         foreach (var data in dataToSend)
                         {
-                            // Only prefix with "DATA:" if it's actual data, not a command
-                            if (data.StartsWith("ID:") || data.StartsWith("DATA_REG:"))
+                            // Se já começa por um comando válido, envia como está
+                            if (data.StartsWith("ID:") || data.StartsWith("DATA_REG:") || data.StartsWith("DATA:") || data.StartsWith("END"))
                             {
                                 await SendMessageAsync(stream, data);
                             }
@@ -199,6 +201,32 @@ namespace Aggregator
             var reply = await client.PreprocessAsync(request);
 
             return reply.NormalizedData;
+        }
+
+        // Aggregator Subscriber
+        public void StartSubscriber()
+        {
+            var factory = new ConnectionFactory() { HostName = "localhost" };
+            using var connection = factory.CreateConnection();
+            using var channel = connection.CreateModel();
+
+            channel.ExchangeDeclare(exchange: "wavy_data", type: ExchangeType.Topic);
+
+            var queueName = channel.QueueDeclare().QueueName;
+            channel.QueueBind(queue: queueName, exchange: "wavy_data", routingKey: "sensor.*");
+
+            var consumer = new EventingBasicConsumer(channel);
+            consumer.Received += (model, ea) =>
+            {
+                var body = ea.Body.ToArray();
+                var message = Encoding.UTF8.GetString(body);
+                Console.WriteLine($"[Aggregator] Received: {message}");
+                // Aqui podes processar e enviar para o server
+            };
+            channel.BasicConsume(queue: queueName, autoAck: true, consumer: consumer);
+
+            Console.WriteLine("Press [enter] to exit.");
+            Console.ReadLine();
         }
     }
 }

@@ -56,3 +56,8 @@ C:\Users\David\Downloads\SD25p2\SD25p2\wavy\server\obj\Debug\net6.0\refint\serve
 C:\Users\David\Downloads\SD25p2\SD25p2\wavy\server\obj\Debug\net6.0\server.pdb
 C:\Users\David\Downloads\SD25p2\SD25p2\wavy\server\obj\Debug\net6.0\server.genruntimeconfig.cache
 C:\Users\David\Downloads\SD25p2\SD25p2\wavy\server\obj\Debug\net6.0\ref\server.dll
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\server\obj\Debug\net6.0\server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\server\obj\Debug\net6.0\server.AssemblyInfoInputs.cache
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\server\obj\Debug\net6.0\server.AssemblyInfo.cs
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\server\obj\Debug\net6.0\server.csproj.CoreCompileInputs.cache
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\server\obj\Debug\net6.0\server.sourcelink.json

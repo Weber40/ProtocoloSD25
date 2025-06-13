@@ -3,11 +3,25 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.IO;
+using System.Collections.Concurrent;
+using Grpc.Net.Client;
+using AnalysisService; // Namespace gerado pelo proto
 
 namespace Wavy.Serv
 {
     public class Server
     {
+        // Guarda o estado de cada cliente (pelo endpoint)
+        private static ConcurrentDictionary<string, ClientState> clientStates = new();
+
+        private enum ClientState
+        {
+            AwaitingID,
+            AwaitingDataReg,
+            AwaitingData,
+            Ended
+        }
+
         public static void Main()
         {
             TcpListener server = null;
@@ -35,40 +49,77 @@ namespace Wavy.Serv
                 server?.Stop();
                 Console.WriteLine("Server stopped.");
             }
+
+            // No fim do ciclo, ou noutro terminal, podes chamar:
+            VisualizarDados();
         }
 
-        private static void ProcessCommand(string command, NetworkStream stream, TcpClient client)
+        private static void ProcessCommand(string command, NetworkStream stream, TcpClient client, string clientKey)
         {
-            Console.WriteLine("Data Received: {0}", command);
-            string[] parts = command.Split(':', 2); // Split into at most 2 parts
-            if (parts.Length < 2 && command != "END") // Allow "END" as a standalone command
-            {
-                Console.WriteLine("Invalid data format received.");
-                return;
-            }
+            if (!clientStates.TryGetValue(clientKey, out var state))
+                state = ClientState.AwaitingID;
 
-            switch (parts[0])
+            string[] parts = command.Split(':', 2);
+            string cmd = parts[0];
+            string arg = parts.Length > 1 ? parts[1] : null;
+
+            switch (state)
             {
-                case "ID":
-                    HandleID(parts[1], stream);
+                case ClientState.AwaitingID:
+                    if (cmd == "ID" && arg != null)
+                    {
+                        HandleID(arg, stream);
+                        clientStates[clientKey] = ClientState.AwaitingDataReg;
+                    }
+                    else
+                    {
+                        SendError(stream, "Expected ID");
+                    }
                     break;
-                case "DATA_REG":
-                    HandleDataReg(parts[1], stream);
+                case ClientState.AwaitingDataReg:
+                    if (cmd == "DATA_REG" && arg != null)
+                    {
+                        HandleDataReg(arg, stream);
+                        clientStates[clientKey] = ClientState.AwaitingData;
+                    }
+                    else
+                    {
+                        SendError(stream, "Expected DATA_REG");
+                    }
                     break;
-                case "DATA":
-                    HandleData(parts[1], stream);
+                case ClientState.AwaitingData:
+                    if (cmd == "DATA" && arg != null)
+                    {
+                        HandleData(arg, stream);
+                    }
+                    else if (cmd == "END")
+                    {
+                        HandleEnd(null, stream);
+                        clientStates[clientKey] = ClientState.Ended;
+                        // Opcional: fechar a ligação aqui
+                    }
+                    else
+                    {
+                        SendError(stream, "Expected DATA or END");
+                    }
                     break;
-                case "END":
-                    HandleEnd(null, stream); // No additional data for END
-                    break;
-                default:
-                    Console.WriteLine("Unknown command received: {0}", parts[0]);
+                case ClientState.Ended:
+                    SendError(stream, "Session already ended");
                     break;
             }
+        }
+
+        private static void SendError(NetworkStream stream, string msg)
+        {
+            byte[] errorMsg = Encoding.ASCII.GetBytes($"ERROR:{msg}\n");
+            stream.Write(errorMsg, 0, errorMsg.Length);
         }
 
         private static void HandleClient(TcpClient client)
         {
+            string clientKey = client.Client.RemoteEndPoint.ToString();
+            clientStates[clientKey] = ClientState.AwaitingID;
+
             try
             {
                 Console.WriteLine($"[CONNECTION] New client connected: {client.Client.RemoteEndPoint}");
@@ -91,14 +142,13 @@ namespace Wavy.Serv
                         {
                             try
                             {
-                                ProcessCommand(commands[i].Trim(), stream, client);
+                                ProcessCommand(commands[i].Trim(), stream, client, clientKey);
                             }
                             catch (Exception ex)
                             {
                                 Console.WriteLine($"Error processing command: {ex.Message}");
                             }
                         }
-
                         // Keep the last incomplete command in the buffer
                         if (!string.IsNullOrWhiteSpace(commands[^1]))
                         {
@@ -110,6 +160,10 @@ namespace Wavy.Serv
             catch (Exception ex)
             {
                 Console.WriteLine($"Error while handling client: {ex.Message}");
+            }
+            finally
+            {
+                clientStates.TryRemove(clientKey, out _);
             }
         }
 
@@ -218,6 +272,35 @@ namespace Wavy.Serv
             {
                 Console.WriteLine($"[SUCCESS] Data received and saved.");
             }
+        }
+
+        public static async Task<string> AnalyzeDataAsync(string data)
+        {
+            using var channel = GrpcChannel.ForAddress("http://localhost:5002");
+            var client = new AnalysisService.AnalysisServiceClient(channel);
+
+            var request = new AnalysisRequest { Data = data };
+            var reply = await client.AnalyzeAsync(request);
+
+            return reply.Result;
+        }
+
+        public static void VisualizarDados()
+        {
+            string filePath = "received_data.csv";
+            if (!File.Exists(filePath))
+            {
+                Console.WriteLine("Ainda não existem dados guardados.");
+                return;
+            }
+
+            Console.WriteLine("=== Dados Recebidos ===");
+            var linhas = File.ReadAllLines(filePath);
+            foreach (var linha in linhas)
+            {
+                Console.WriteLine(linha);
+            }
+            Console.WriteLine("=======================");
         }
     }
 }

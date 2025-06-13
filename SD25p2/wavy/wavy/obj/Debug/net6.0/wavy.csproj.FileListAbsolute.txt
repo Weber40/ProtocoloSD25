@@ -42,3 +42,18 @@ C:\Users\tiago\ProtocoloSD25-Weber\wavy\wavy\obj\Debug\net6.0\refint\wavy.dll
 C:\Users\tiago\ProtocoloSD25-Weber\wavy\wavy\obj\Debug\net6.0\wavy.pdb
 C:\Users\tiago\ProtocoloSD25-Weber\wavy\wavy\obj\Debug\net6.0\wavy.genruntimeconfig.cache
 C:\Users\tiago\ProtocoloSD25-Weber\wavy\wavy\obj\Debug\net6.0\ref\wavy.dll
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\wavy\bin\Debug\net6.0\wavy.exe
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\wavy\bin\Debug\net6.0\wavy.deps.json
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\wavy\bin\Debug\net6.0\wavy.runtimeconfig.json
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\wavy\bin\Debug\net6.0\wavy.dll
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\wavy\bin\Debug\net6.0\wavy.pdb
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\wavy\obj\Debug\net6.0\wavy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\wavy\obj\Debug\net6.0\wavy.AssemblyInfoInputs.cache
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\wavy\obj\Debug\net6.0\wavy.AssemblyInfo.cs
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\wavy\obj\Debug\net6.0\wavy.csproj.CoreCompileInputs.cache
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\wavy\obj\Debug\net6.0\wavy.sourcelink.json
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\wavy\obj\Debug\net6.0\wavy.dll
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\wavy\obj\Debug\net6.0\refint\wavy.dll
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\wavy\obj\Debug\net6.0\wavy.pdb
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\wavy\obj\Debug\net6.0\wavy.genruntimeconfig.cache
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\wavy\obj\Debug\net6.0\ref\wavy.dll

@@ -7,7 +7,7 @@
 
 using grpc = global::Grpc.Core;
 
-namespace Aggregator.Preprocessing {
+namespace Preprocessing {
   public static partial class PreprocessingService
   {
     static readonly string __ServiceName = "PreprocessingService";
@@ -46,12 +46,12 @@ namespace Aggregator.Preprocessing {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Aggregator.Preprocessing.PreprocessRequest> __Marshaller_PreprocessRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Aggregator.Preprocessing.PreprocessRequest.Parser));
+    static readonly grpc::Marshaller<global::Preprocessing.PreprocessRequest> __Marshaller_PreprocessRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Preprocessing.PreprocessRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Aggregator.Preprocessing.PreprocessReply> __Marshaller_PreprocessReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Aggregator.Preprocessing.PreprocessReply.Parser));
+    static readonly grpc::Marshaller<global::Preprocessing.PreprocessReply> __Marshaller_PreprocessReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Preprocessing.PreprocessReply.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Aggregator.Preprocessing.PreprocessRequest, global::Aggregator.Preprocessing.PreprocessReply> __Method_Preprocess = new grpc::Method<global::Aggregator.Preprocessing.PreprocessRequest, global::Aggregator.Preprocessing.PreprocessReply>(
+    static readonly grpc::Method<global::Preprocessing.PreprocessRequest, global::Preprocessing.PreprocessReply> __Method_Preprocess = new grpc::Method<global::Preprocessing.PreprocessRequest, global::Preprocessing.PreprocessReply>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Preprocess",
@@ -61,7 +61,7 @@ namespace Aggregator.Preprocessing {
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::Aggregator.Preprocessing.PreprocessingReflection.Descriptor.Services[0]; }
+      get { return global::Preprocessing.PreprocessingReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Base class for server-side implementations of PreprocessingService</summary>
@@ -69,7 +69,7 @@ namespace Aggregator.Preprocessing {
     public abstract partial class PreprocessingServiceBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Aggregator.Preprocessing.PreprocessReply> Preprocess(global::Aggregator.Preprocessing.PreprocessRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Preprocessing.PreprocessReply> Preprocess(global::Preprocessing.PreprocessRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -92,7 +92,7 @@ namespace Aggregator.Preprocessing {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, PreprocessingServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_Preprocess, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Aggregator.Preprocessing.PreprocessRequest, global::Aggregator.Preprocessing.PreprocessReply>(serviceImpl.Preprocess));
+      serviceBinder.AddMethod(__Method_Preprocess, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Preprocessing.PreprocessRequest, global::Preprocessing.PreprocessReply>(serviceImpl.Preprocess));
     }
 
   }

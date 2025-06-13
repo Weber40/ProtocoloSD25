@@ -1,0 +1,7 @@
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\AnalysisService\obj\Debug\net9.0\AnalysisService.csproj.AssemblyReference.cache
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\AnalysisService\obj\Debug\net9.0\AnalysisService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\AnalysisService\obj\Debug\net9.0\AnalysisService.AssemblyInfoInputs.cache
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\AnalysisService\obj\Debug\net9.0\AnalysisService.AssemblyInfo.cs
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\AnalysisService\obj\Debug\net9.0\AnalysisService.csproj.CoreCompileInputs.cache
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\AnalysisService\obj\Debug\net9.0\AnalysisService.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\David\OneDrive - Universidade de Tras-os-Montes e Alto Douro\Desktop\Universidade\Sistemas Distribuídos\SD Protocolo 2-25\SD25p2\wavy\AnalysisService\obj\Debug\net9.0\AnalysisService.sourcelink.json
