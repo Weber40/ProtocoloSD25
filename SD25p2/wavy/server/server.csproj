@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Protobuf Include="DataAn\analysis.proto" GrpcServices="Client" />
+    <Protobuf Include="..\DataAnalysis\analysis.proto" GrpcServices="Client" />
   </ItemGroup>
 
 </Project>

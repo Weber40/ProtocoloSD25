@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package dataanalysis;
+
+// Example message for a single sensor reading
+message SensorReading {
+  string topic = 1;      // e.g., "TEMPERATURE" or "PRESSURE"
+  double value = 2;
+  string wavy_id = 3;
+  string timestamp = 4;  // ISO 8601 string
+}
+
+// Request for analysis (could be empty if server just triggers analysis)
+message AnalysisRequest {}
+
+// Response with analysis results
+message AnalysisResult {
+  string topic = 1;
+  double average = 2;
+  double minimum = 3;
+  double maximum = 4;
+}
+
+// Service definition
+service DataAnalysisService {
+  // Request analysis and get results
+  rpc GetAnalysis (AnalysisRequest) returns (stream AnalysisResult);
+}

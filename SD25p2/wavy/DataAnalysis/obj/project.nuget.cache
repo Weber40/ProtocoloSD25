@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "roNXLWjLOmTcOvY63xVDrBEVCaEWMirhZD4jFTRsBi77gLhS0kW9IQ8jtL9D4q+pvZkx0xHc7t/tzm4Qbiginw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tiago\\sd2425parte2\\ProtocoloSD25-1\\SD25p2\\wavy\\DataAnalysis\\DataAnalysis.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tiago\\.nuget\\packages\\asyncio\\0.1.69\\asyncio.0.1.69.nupkg.sha512",
+    "C:\\Users\\tiago\\.nuget\\packages\\nacl.net\\0.1.13\\nacl.net.0.1.13.nupkg.sha512",
+    "C:\\Users\\tiago\\.nuget\\packages\\netmq\\4.0.2\\netmq.4.0.2.nupkg.sha512",
+    "C:\\Users\\tiago\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
+    "C:\\Users\\tiago\\.nuget\\packages\\system.servicemodel.primitives\\8.1.2\\system.servicemodel.primitives.8.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

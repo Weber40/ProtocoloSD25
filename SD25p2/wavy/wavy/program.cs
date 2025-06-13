@@ -20,13 +20,17 @@ namespace Wavy
                 {
                     string temp = (rand.NextDouble() * 50).ToString("F2");
                     string pressure = (rand.NextDouble() * 50).ToString("F2");
-                    string timestamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                    string date = DateTime.Now.ToString("yyyy-MM-dd"); // Só a data
 
-                    publisher.SendMoreFrame("TEMPERATURE").SendFrame($"{temp}:{wavyId}:{timestamp}");
-                    publisher.SendMoreFrame("PRESSURE").SendFrame($"{pressure}:{wavyId}:{timestamp}");
+                    // Formato CSV fácil para DataAnalysis: TOPIC,VALUE,WAVYID,DATE
+                    string tempLine = $"TEMPERATURE,{temp},{wavyId},{date}";
+                    string pressureLine = $"PRESSURE,{pressure},{wavyId},{date}";
 
-                    Console.WriteLine($"[ZeroMQ] Published TEMPERATURE: {temp}:{wavyId}:{timestamp}");
-                    Console.WriteLine($"[ZeroMQ] Published PRESSURE: {pressure}:{wavyId}:{timestamp}");
+                    publisher.SendMoreFrame("TEMPERATURE").SendFrame(tempLine);
+                    publisher.SendMoreFrame("PRESSURE").SendFrame(pressureLine);
+
+                    Console.WriteLine($"[ZeroMQ] Published {tempLine}");
+                    Console.WriteLine($"[ZeroMQ] Published {pressureLine}");
 
                     Thread.Sleep(1000);
                 }
