@@ -1,36 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\David\\Downloads\\SD25p2\\SD25p2\\wavy\\PreprocessingService\\PreprocessingService.csproj": {}
+    "C:\\Users\\tiago\\sd2425parte2\\ProtocoloSD25-1\\SD25p2\\wavy\\PreprocessingService\\PreprocessingService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\David\\Downloads\\SD25p2\\SD25p2\\wavy\\PreprocessingService\\PreprocessingService.csproj": {
+    "C:\\Users\\tiago\\sd2425parte2\\ProtocoloSD25-1\\SD25p2\\wavy\\PreprocessingService\\PreprocessingService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\David\\Downloads\\SD25p2\\SD25p2\\wavy\\PreprocessingService\\PreprocessingService.csproj",
+        "projectUniqueName": "C:\\Users\\tiago\\sd2425parte2\\ProtocoloSD25-1\\SD25p2\\wavy\\PreprocessingService\\PreprocessingService.csproj",
         "projectName": "PreprocessingService",
-        "projectPath": "C:\\Users\\David\\Downloads\\SD25p2\\SD25p2\\wavy\\PreprocessingService\\PreprocessingService.csproj",
-        "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\David\\Downloads\\SD25p2\\SD25p2\\wavy\\PreprocessingService\\obj\\",
+        "projectPath": "C:\\Users\\tiago\\sd2425parte2\\ProtocoloSD25-1\\SD25p2\\wavy\\PreprocessingService\\PreprocessingService.csproj",
+        "packagesPath": "C:\\Users\\tiago\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tiago\\sd2425parte2\\ProtocoloSD25-1\\SD25p2\\wavy\\PreprocessingService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -38,17 +38,11 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Google.Protobuf": {
               "target": "Package",
@@ -63,6 +57,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.57.0, )"
+            },
+            "NetMQ": {
+              "target": "Package",
+              "version": "[4.0.1.16, )"
             }
           },
           "imports": [
@@ -81,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.428\\RuntimeIdentifierGraph.json"
         }
       }
     }

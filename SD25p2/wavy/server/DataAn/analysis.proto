@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+service AnalysisService {
+  rpc Analyze (AnalysisRequest) returns (AnalysisReply);
+}
+
+message AnalysisRequest {
+  string sensorType = 1;
+  repeated double values = 2;
+}
+
+message AnalysisReply {
+  double mean = 1;
+  double stddev = 2;
+  string pattern = 3;
+}

@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "server", "server\server.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wavy", "wavy\wavy.csproj", "{6A64D491-C4D5-52E7-EC22-E9864EC437E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Launcher", "Launcher\Launcher.csproj", "{F9408266-DB39-45F1-A8A6-AC46D6A90215}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WavyLauncher", "WavyLauncher\WavyLauncher.csproj", "{AEA5CAB1-EBB3-4130-9768-0E185AD915BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +69,18 @@ Global
 		{F9408266-DB39-45F1-A8A6-AC46D6A90215}.Release|x64.Build.0 = Release|Any CPU
 		{F9408266-DB39-45F1-A8A6-AC46D6A90215}.Release|x86.ActiveCfg = Release|Any CPU
 		{F9408266-DB39-45F1-A8A6-AC46D6A90215}.Release|x86.Build.0 = Release|Any CPU
+		{AEA5CAB1-EBB3-4130-9768-0E185AD915BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEA5CAB1-EBB3-4130-9768-0E185AD915BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEA5CAB1-EBB3-4130-9768-0E185AD915BB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AEA5CAB1-EBB3-4130-9768-0E185AD915BB}.Debug|x64.Build.0 = Debug|Any CPU
+		{AEA5CAB1-EBB3-4130-9768-0E185AD915BB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AEA5CAB1-EBB3-4130-9768-0E185AD915BB}.Debug|x86.Build.0 = Debug|Any CPU
+		{AEA5CAB1-EBB3-4130-9768-0E185AD915BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEA5CAB1-EBB3-4130-9768-0E185AD915BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEA5CAB1-EBB3-4130-9768-0E185AD915BB}.Release|x64.ActiveCfg = Release|Any CPU
+		{AEA5CAB1-EBB3-4130-9768-0E185AD915BB}.Release|x64.Build.0 = Release|Any CPU
+		{AEA5CAB1-EBB3-4130-9768-0E185AD915BB}.Release|x86.ActiveCfg = Release|Any CPU
+		{AEA5CAB1-EBB3-4130-9768-0E185AD915BB}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

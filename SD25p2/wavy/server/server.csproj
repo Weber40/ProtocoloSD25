@@ -6,4 +6,18 @@
     <RootNamespace>Wavy.Server</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.31.1" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.71.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.72.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="NetMQ" Version="4.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="DataAn\analysis.proto" GrpcServices="Client" />
+  </ItemGroup>
+
 </Project>

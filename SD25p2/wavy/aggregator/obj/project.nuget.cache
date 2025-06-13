@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "r76G4ONXa1nAoDT+GbwJuO0xCVgi/TmY8OYGrDIRhCQxbEYTZViYAJZ/tK75V8200sqo0YZ08oXP/LvkxaGsCg==",
+  "dgSpecHash": "kNuGzGSq4PheO/VgFjZsklhgkDLGApt+ml7arxF6sZOXBlLph5z4gDLeXyeOph/6lZestwbh/mVx12PHJT7FdQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\tiago\\sd2425parte2\\ProtocoloSD25-1\\SD25p2\\wavy\\aggregator\\aggregator.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\tiago\\.nuget\\packages\\asyncio\\0.1.69\\asyncio.0.1.69.nupkg.sha512",
     "C:\\Users\\tiago\\.nuget\\packages\\google.protobuf\\3.31.0\\google.protobuf.3.31.0.nupkg.sha512",
     "C:\\Users\\tiago\\.nuget\\packages\\grpc.core.api\\2.71.0\\grpc.core.api.2.71.0.nupkg.sha512",
     "C:\\Users\\tiago\\.nuget\\packages\\grpc.net.client\\2.71.0\\grpc.net.client.2.71.0.nupkg.sha512",
@@ -12,9 +13,13 @@
     "C:\\Users\\tiago\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\tiago\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\tiago\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\tiago\\.nuget\\packages\\nacl.net\\0.1.13\\nacl.net.0.1.13.nupkg.sha512",
+    "C:\\Users\\tiago\\.nuget\\packages\\netmq\\4.0.2\\netmq.4.0.2.nupkg.sha512",
     "C:\\Users\\tiago\\.nuget\\packages\\rabbitmq.client\\6.2.2\\rabbitmq.client.6.2.2.nupkg.sha512",
     "C:\\Users\\tiago\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\tiago\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\tiago\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
+    "C:\\Users\\tiago\\.nuget\\packages\\system.servicemodel.primitives\\8.1.2\\system.servicemodel.primitives.8.1.2.nupkg.sha512",
     "C:\\Users\\tiago\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512",
     "C:\\Users\\tiago\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512"
   ],

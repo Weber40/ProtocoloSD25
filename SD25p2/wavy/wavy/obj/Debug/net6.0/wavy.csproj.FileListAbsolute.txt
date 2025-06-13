@@ -3,10 +3,16 @@ C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\wavy\bin\Debug\net6.0\wa
 C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\wavy\bin\Debug\net6.0\wavy.runtimeconfig.json
 C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\wavy\bin\Debug\net6.0\wavy.dll
 C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\wavy\bin\Debug\net6.0\wavy.pdb
+C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\wavy\bin\Debug\net6.0\AsyncIO.dll
 C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\wavy\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\wavy\bin\Debug\net6.0\NaCl.dll
+C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\wavy\bin\Debug\net6.0\NetMQ.dll
 C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\wavy\bin\Debug\net6.0\RabbitMQ.Client.dll
 C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\wavy\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\wavy\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\wavy\bin\Debug\net6.0\System.ServiceModel.Duplex.dll
+C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\wavy\bin\Debug\net6.0\System.ServiceModel.Primitives.dll
+C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\wavy\bin\Debug\net6.0\System.ServiceModel.Security.dll
 C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\wavy\bin\Debug\net6.0\System.Threading.Channels.dll
 C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\wavy\bin\Debug\net6.0\System.Threading.RateLimiting.dll
 C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\wavy\obj\Debug\net6.0\wavy.csproj.AssemblyReference.cache

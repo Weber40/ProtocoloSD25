@@ -1,0 +1,15 @@
+C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\WavyLauncher\bin\Debug\net6.0-windows\WavyLauncher.exe
+C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\WavyLauncher\bin\Debug\net6.0-windows\WavyLauncher.deps.json
+C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\WavyLauncher\bin\Debug\net6.0-windows\WavyLauncher.runtimeconfig.json
+C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\WavyLauncher\bin\Debug\net6.0-windows\WavyLauncher.dll
+C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\WavyLauncher\bin\Debug\net6.0-windows\WavyLauncher.pdb
+C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\WavyLauncher\obj\Debug\net6.0-windows\WavyLauncher.csproj.AssemblyReference.cache
+C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\WavyLauncher\obj\Debug\net6.0-windows\WavyLauncher.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\WavyLauncher\obj\Debug\net6.0-windows\WavyLauncher.AssemblyInfoInputs.cache
+C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\WavyLauncher\obj\Debug\net6.0-windows\WavyLauncher.AssemblyInfo.cs
+C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\WavyLauncher\obj\Debug\net6.0-windows\WavyLauncher.csproj.CoreCompileInputs.cache
+C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\WavyLauncher\obj\Debug\net6.0-windows\WavyLauncher.dll
+C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\WavyLauncher\obj\Debug\net6.0-windows\refint\WavyLauncher.dll
+C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\WavyLauncher\obj\Debug\net6.0-windows\WavyLauncher.pdb
+C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\WavyLauncher\obj\Debug\net6.0-windows\WavyLauncher.genruntimeconfig.cache
+C:\Users\tiago\sd2425parte2\ProtocoloSD25-1\SD25p2\wavy\WavyLauncher\obj\Debug\net6.0-windows\ref\WavyLauncher.dll

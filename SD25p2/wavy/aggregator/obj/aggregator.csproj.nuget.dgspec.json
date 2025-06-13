@@ -58,6 +58,10 @@
               "target": "Package",
               "version": "[2.72.0, )"
             },
+            "NetMQ": {
+              "target": "Package",
+              "version": "[4.0.2, )"
+            },
             "RabbitMQ.Client": {
               "target": "Package",
               "version": "[6.2.2, )"
